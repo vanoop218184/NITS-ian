@@ -8,7 +8,7 @@ const Gall = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://alumni-po.onrender.com/alumni/gallery"
+          "https://nits-ian.onrender.com/alumni/gallery"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch data");

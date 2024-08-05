@@ -20,7 +20,7 @@ const Updatep = () => {
   const location = useLocation();
   useEffect(() => {
     const fun = async () => {
-      let data = await fetch("https://alumni-po.onrender.com/alumni/dashdata", {
+      let data = await fetch("https://nits-ian.onrender.com/alumni/dashdata", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${localdata.token}`,
@@ -54,7 +54,7 @@ const Updatep = () => {
 
     try {
       let result = await fetch(
-        `https://alumni-po.onrender.com/alumni/user/${id}`,
+        `https://nits-ian.onrender.com/alumni/user/${id}`,
         {
           method: "Put",
           body: formData,

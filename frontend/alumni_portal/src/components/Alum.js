@@ -10,7 +10,7 @@ const Alum = () => {
   useEffect(() => {
     const run = async () => {
       try {
-        let result = await fetch("https://alumni-po.onrender.com/alumni/alum");
+        let result = await fetch("https://nits-ian.onrender.com/alumni/alum");
         result = await result.json();
         SetData(result);
       } catch (error) {

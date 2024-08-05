@@ -9,7 +9,7 @@ const Dash = () => {
   localdata = JSON.parse(localdata);
   useEffect(() => {
     const fun = async () => {
-      let data = await fetch("https://alumni-po.onrender.com/alumni/dashdata", {
+      let data = await fetch("https://nits-ian.onrender.com/alumni/dashdata", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${localdata.token}`,
@@ -22,15 +22,15 @@ const Dash = () => {
   }, []);
 
   if (user) {
-    let t = `https://alumni-po.onrender.com/uploads/${user.picture}`;
+    let t = `https://nits-ian.onrender.com/uploads/${user.picture}`;
     if (t) {
       im = t;
     }
   }
   return (
     <>
-      <div className="flex justify-center bg-white">
-        <div className="w-11/12 h-auto space-x-7 flex flex-row items-center">
+      <div className="flex justify-center bg-white text-wrap">
+        <div className="w-11/12 h-auto space-x-7 flex flex-col md:flex-row items-center">
           <div className="w-1/2 my-3 ">
             <div className=" rounded-lg bg-slate-50 font-serif m-5 p-5 border-2 border-slate-300 shadow-xl flex flex-col">
               <div className="   m-8 p-4 flex justify-center avatar">

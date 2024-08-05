@@ -6,7 +6,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const handleLogin = async (event) => {
     event.preventDefault();
-    let result = await fetch("https://alumni-po.onrender.com/alumni/login", {
+    let result = await fetch("https://nits-ian.onrender.com/alumni/login", {
       method: "post",
       body: JSON.stringify({ email, password }),
       headers: {

@@ -16,7 +16,7 @@ function Navbar() {
     const fun = async () => {
       if (localdata) {
         let data = await fetch(
-          "https://alumni-po.onrender.com/alumni/dashdata",
+          "https://nits-ian.onrender.com/alumni/dashdata",
           {
             method: "GET",
             headers: {
@@ -33,7 +33,7 @@ function Navbar() {
     fun();
   }, []);
   if (user) {
-    let t = `https://alumni-po.onrender.com/uploads/${user.picture}`;
+    let t = `https://nits-ian.onrender.com/uploads/${user.picture}`;
     console.log(t);
     if (t) {
       im = t;
@@ -48,10 +48,7 @@ function Navbar() {
       <div className="navbar h-3 w-100% bg-[#003049] flex flex-row space-x-5 justify-between sticky top-0 z-20 ">
         <div>
           <Link to="/" className="flex ">
-            <img
-              className=" h-14 w-14 rounded-full ml-1 "
-              src={img}
-            />
+            <img className=" h-14 w-14 rounded-full ml-1 " src={img} />
             <p className="bg-[#003049] font-extrabold font-serif text-white text-3xl  rounded-lg p-2 m-1 hover:scale-1/2">
               NITS-ian
             </p>

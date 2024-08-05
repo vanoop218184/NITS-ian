@@ -7,7 +7,7 @@ const AluCard = (props) => {
         <div className="flex items-center space-x-4">
           <img
             className="w-24 h-24 rounded-full object-cover border-2 border-blue-950"
-            src={`https://alumni-po.onrender.com/uploads/${props.img}`}
+            src={`https://nits-ian.onrender.com/uploads/${props.img}`}
             alt={`Profile of ${props.name}`}
           />
           <div>

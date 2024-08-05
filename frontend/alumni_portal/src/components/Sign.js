@@ -27,8 +27,6 @@ const Sign = () => {
       return;
     }
 
-   
-
     // Proceed if validation passes
     try {
       const formData = new FormData();
@@ -43,7 +41,7 @@ const Sign = () => {
       formData.append("company", company);
 
       let result = await fetch(
-        "https://alumni-po.onrender.com/alumni/register",
+        "https://nits-ian.onrender.com/alumni/register",
         {
           method: "POST",
           body: formData,
