@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-
+import va1 from "./images/one.png"
+import va2 from "./images/two.png"
+import va3 from "./images/three.png"
+import va4 from "./images/four.png"
 const ImageSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [transition, setTransition] = useState(false);
-
   // Define an array of image URLs
   const slides = [
-    "http://www.nits.ac.in/images%20of%20site/8.jpg",
-    "http://www.nits.ac.in/images%20of%20site/1.jpg",
-    "http://www.nits.ac.in/images%20of%20site/2.jpg",
-    "http://www.nits.ac.in/images%20of%20site/4.jpg",
+    va1,
+     va2,va3,va4
   ];
 
   useEffect(() => {

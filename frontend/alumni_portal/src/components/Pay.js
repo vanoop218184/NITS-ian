@@ -3,10 +3,10 @@ import pic from "./images/pay.jpg";
 const Pay = () => {
   return (
     <div className="w-full flex flex-col items-center">
-      <div className="w-10/12 flex justify-center m-5 p-5">
+      <div className="w-10/12 flex  flex-row justify-center m-5 p-5">
         <div className="w-1/2 flex flex-col items-center ">
           <img
-            className=" w-[300px] m-2"
+            className=" w-[300px] m-2 animate-pulse"
             src="https://alumni.mnit.ac.in/images/givbackheading.jpg"
           ></img>
           <p className=" mt-10 p-2 font-semibold text-left">
@@ -23,9 +23,9 @@ const Pay = () => {
             future generations.
           </p>
         </div>
-        <div className="w-1/2">
+        <div className="w-1/2 flex justify-center">
           <img
-            className="w-[600px] flex justify-center items rounded-xl"
+            className="w-[600px] md:flex justify-center hidden  items rounded-xl"
             src={pic}
           ></img>
         </div>
@@ -112,8 +112,8 @@ const Pay = () => {
                   </h1>
                   <p className="m-2 text-center">
                     Alumni may help in raising corpus fund using their wide
-                    network with industry. Note: Donations to Malaviya National
-                    Institute of Technology, Jaipur are exempted under section
+                    network with industry. Note: Donations to National
+                    Institute of Technology, Silchar are exempted under section
                     80G(5)(vi) of Income Tax Act 1961.
                   </p>
                 </div>

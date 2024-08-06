@@ -173,7 +173,7 @@ function Navbar() {
             <div className="flex space-x-2 justify-center items-center ml-2">
               <Link to="/profile">
                 <img
-                  className="rounded-full w-[40px]"
+                  className="rounded-full w-[45px] h-[45px]"
                   src={im}
                   alt="profile"
                 ></img>
