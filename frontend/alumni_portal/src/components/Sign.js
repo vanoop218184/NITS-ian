@@ -54,7 +54,7 @@ const Sign = () => {
         localStorage.setItem("user", JSON.stringify(result));
         navigate("/");
       } else {
-        alert(result.message.message);
+        alert(result.messag);
       }
     } catch (error) {
       alert(error.message);

@@ -47,10 +47,9 @@ class AlumniControllers {
 
       const { batch, company, email, link, name, password, phone, position } =
         req.body;
-      const picture = req.file ? req.file.filename : null; 
+      const picture = req.file ? req.file.filename : null;
 
       try {
-       
         const existingUser = await User.findOne({ email: email });
         if (existingUser) {
           return res.send({ status: "failed", message: "Already Registered" });
@@ -112,7 +111,7 @@ class AlumniControllers {
   };
   static Login = async (req, res) => {
     const { email, password } = req.body;
-    console.log(req.body);
+    // console.log(req.body);
     if (password && email) {
       const user = await User.findOne({ email: email });
       if (user) {
