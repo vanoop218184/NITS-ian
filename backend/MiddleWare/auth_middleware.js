@@ -15,6 +15,7 @@ const checkUserAuth=async(req,res,next)=>{
                 }
                 else{
                   req.user=await User.findById(user.USER_id).select('-password');
+                    // remove the password from the user by select method
                 }
               next();
             });
