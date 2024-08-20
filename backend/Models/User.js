@@ -28,6 +28,7 @@ const userSchema = mongoose.Schema({
   picture: { type: String, require: true },
 });
 
+//  Like jane se phle mujhse milte jana 
 userSchema.pre("save", async function (next) {
   {
     try {
