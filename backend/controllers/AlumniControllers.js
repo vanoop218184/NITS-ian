@@ -54,8 +54,7 @@ class AlumniControllers {
         if (existingUser) {
           return res.send({ status: "failed", message: "Already Registered" });
         }
-
-        if (
+       if (
           name &&
           email &&
           password &&
