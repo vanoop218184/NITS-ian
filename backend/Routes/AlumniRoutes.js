@@ -7,10 +7,11 @@ const router = express.Router();
 //protected routes
 router.use("/dashdata", authmiddleware);
 router.use("/jobs", del);
-
+// test through end points
 router.get("/", () => {
   res.send("hello Alumni from this side");
 });
+
 
 //public routes
 router.get("/dashdata", AlumniControllers.ProfileData);
