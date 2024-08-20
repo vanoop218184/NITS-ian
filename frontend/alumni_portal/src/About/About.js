@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Image_slider from '../components/Image_slider.js'
 import Navbar from '../components/Navbar'
 
+
 function About() {
   return (
    <>
