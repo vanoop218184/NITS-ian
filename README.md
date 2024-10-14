@@ -34,6 +34,7 @@ The **Alumni Portal** is a full-stack web application designed to bridge the com
 ## Tools and Libraries
 - **Moment.js**: Used for date and time manipulation in job posts.
 - **Multer**: Integrated for file uploads such as profile images.
+- **bcrypt**: Used to hash user passwords securely before storing them in the database.
   
 ## Challenges and Solutions
 1. **Handling Authentication**: Implemented JWT-based authentication to secure the login and registration process.
@@ -49,9 +50,10 @@ The Alumni Portal creates a seamless way for alumni to engage with their alma ma
 ## Steps to Run the Code
 
 ### Prerequisites
-- Node.js and npm installed
-- MongoDB installed and running locally or on a cloud-based service (e.g., MongoDB Atlas)
-- Git installed
+- **Node.js** and **npm** installed
+- **MongoDB** installed and running locally or on a cloud-based service (e.g., MongoDB Atlas)
+- **Git** installed
+- **bcrypt** installed for hashing passwords securely
 
 ### 1. Clone the repository
 ```bash
